@@ -42,15 +42,7 @@ dependencies {
     implementation "androidx.cardview:cardview:${androidxVersion}"
     implementation "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}"
     implementation "com.google.android.material:material:${androidxVersion}"
-
-//    // Dagger
-//    implementation "com.google.dagger:dagger:${rootProject.ext.daggerVersion}"
-//    kapt "com.google.dagger:dagger-compiler:${rootProject.ext.daggerVersion}"
-//    implementation "com.google.dagger:dagger-android:${rootProject.ext.daggerVersion}"
-//    kapt "com.google.dagger:dagger-android-processor:${rootProject.ext.daggerVersion}"
-//    implementation "com.google.dagger:dagger-android-support:${rootProject.ext.daggerVersion}"
-//    kapt "com.google.dagger:dagger-android-support:${rootProject.ext.daggerVersion}"
-
+    
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVersion}"
     implementation "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofitVersion}"
@@ -72,8 +64,14 @@ dependencies {
     implementation "org.jetbrains.anko:anko-design:$rootProject.ext.anko_version"
 
 
-    implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation "com.squareup.picasso:picasso:${rootProject.ext.picassoVersion}"
+    implementation "de.hdodenhof:circleimageview:${rootProject.ext.circleimageviewVersion}"
+
+    // Leak canary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${rootProject.ext.leakCanaryVersion}"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${rootProject.ext.leakCanaryVersion}"
+    testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:${rootProject.ext.leakCanaryVersion}"
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
