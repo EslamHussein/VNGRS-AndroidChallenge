@@ -4,26 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".twittersearch.view.TwitterSearchActivity">
+    tools:context=".statusdetails.view.StatusDetailsActivity">
 
-
-    <SearchView
-        android:id="@+id/twitterSearchView"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/statusDetailsToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:queryHint="@string/search" />
+        android:background="?attr/colorPrimary" />
 
 
     <fragment
-        android:id="@+id/twitterSearchFragment"
-        class="com.vngrs.vngrs.twittersearch.view.TwitterSearchFragment"
+        android:id="@+id/statusDetailsFragment"
+        class="com.vngrs.vngrs.statusdetails.view.StatusDetailsFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/twitterSearchView"
-        tools:layout="@layout/fragment_twitter_search" />
+        app:layout_constraintTop_toBottomOf="@id/statusDetailsToolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
