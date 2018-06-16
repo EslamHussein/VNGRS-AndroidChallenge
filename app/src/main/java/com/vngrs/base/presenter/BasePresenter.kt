@@ -15,12 +15,6 @@ abstract class BasePresenter<V : MvpView> : MvpPresenter<V> {
     private var viewRef: WeakReference<V>? = null
 
     private var disposables: CompositeDisposable? = null
-    /**
-     * @return True if the view this presenter is attached to still exists and not garbage collected
-     * since we are holding it through a `WeakReference`
-     */
-    protected val isViewAttached: Boolean
-        get() = viewRef != null && viewRef?.get() != null
 
     protected val view: V?
         get() = viewRef?.get()
