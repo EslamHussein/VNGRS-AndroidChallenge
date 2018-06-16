@@ -1,6 +1,8 @@
 package com.vngrs
 
 import android.app.Application
+import com.squareup.leakcanary.BuildConfig
+import com.squareup.leakcanary.LeakCanary
 
 /**
  * Created by Eslam Hussein on 6/11/18.
@@ -10,6 +12,19 @@ class App : Application() {
         super.onCreate()
 
         instance = this
+        initLeakCanary()
+
+
+    }
+
+    private fun initLeakCanary() {
+
+        if (BuildConfig.DEBUG && LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return
+        }
+        LeakCanary.install(this)
 
     }
 

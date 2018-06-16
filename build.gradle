@@ -41,5 +41,8 @@ ext {
     anko_version = '0.10.5'
     retrofit2RxJava2AdapterVersion = '2.3.0'
     constraintLayoutVersion = '1.1.2'
+    picassoVersion = '2.71828'
+    circleimageviewVersion='2.2.0'
+
 
 }
