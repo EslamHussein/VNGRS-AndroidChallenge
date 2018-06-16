@@ -2,7 +2,7 @@ package com.vngrs.base.view
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import com.vngrs.base.presenter.MvpPresenter
 
 abstract class BaseFragment<in V : MvpView, P : MvpPresenter<V>> : Fragment(), MvpView {

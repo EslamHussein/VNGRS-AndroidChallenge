@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statusItemViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/statuesSearchImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/vngrs_logo"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/statuesSearchTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/statuesSearchImageView"
+        app:layout_constraintTop_toTopOf="@id/statuesSearchImageView"
+        tools:text="asd asd asd asd asmkld lkamsd klas dlkas lda skjdn asnkdj aknsdh ashlkd hjkasdjl jhkals djkl ajksdhjk ahjksdhkja lkjasdjl jlasdjl kajlksdjkl asljkd jklasljdk ljkasjlkd ljaksdjlk ajlksd jlkajlsk ljkasdljk aljskdl ljksajlksjlkadjlasjlkd jlajls djlaj lsjdlk as shkljd ahjklsdhkjl ahjklsd ajsdhkjl hajklsdhlk ahklsdhjklashjkldhjkl asdasd" />
+</androidx.constraintlayout.widget.ConstraintLayout>

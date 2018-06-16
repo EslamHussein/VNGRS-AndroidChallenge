@@ -1,7 +1,7 @@
 package com.vngrs.base.view
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.vngrs.base.presenter.MvpPresenter
 
 abstract class BaseActivity<in V : MvpView, P : MvpPresenter<V>> : AppCompatActivity(), MvpView {
